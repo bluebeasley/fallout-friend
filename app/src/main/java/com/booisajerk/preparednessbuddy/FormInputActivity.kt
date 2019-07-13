@@ -1,8 +1,10 @@
 package com.booisajerk.preparednessbuddy
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_form_input.*
 
 class FormInputActivity : AppCompatActivity() {
@@ -10,6 +12,11 @@ class FormInputActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_input)
+
+        textBirthday.setOnClickListener { view ->
+            val activityIntent = Intent(this, DatePicker::class.java)
+            startActivity(activityIntent)
+        }
 
         val relationshipSelection = ArrayAdapter<RelationshipLevel>(
             this,
@@ -19,6 +26,7 @@ class FormInputActivity : AppCompatActivity() {
         relationshipSelection.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         spinnerRelationship.adapter = relationshipSelection
+        Log.d("Nicole", "$relationshipSelection")
 
 
         val medicalSelection = ArrayAdapter<MedicalConditions>(

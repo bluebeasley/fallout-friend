@@ -9,5 +9,6 @@
     <string name="recommended_title">Recommended for you</string>
     <string name="progress_title_start">Get Started</string>
     <string name="progress_title_in_progress">Keep Going</string>
-    <string name="progress_subtitle_in_progress">You\'ve completed %1$s / %2$s </string>
+    <string name="progress_subtitle_in_progress">You\'ve completed %1$s / %2$s</string>
+    <string name="title_activity_date_picker">DatePicker</string>
 </resources>
