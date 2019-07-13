@@ -17,15 +17,20 @@ class MainActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                textMessage.setText(R.string.title_home)
+                //TODO do something
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
-                textMessage.setText(R.string.title_dashboard)
+            R.id.navigation_chat -> {
+                //TODO do something
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
-                textMessage.setText(R.string.title_notifications)
+            R.id.navigation_alert -> {
+                //TODO do something
+                return@OnNavigationItemSelectedListener true
+            }
+
+            R.id.navigation_profile -> {
+                //TODO do something
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -34,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     //TODO add real images here
     var sampleImages =
-        intArrayOf(R.drawable.ic_business_time, R.drawable.ic_business_time)
+        intArrayOf(R.drawable.ic_chat_bubble_black_24dp, R.drawable.ic_mood_black_24dp)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,8 +61,7 @@ class MainActivity : AppCompatActivity() {
         carouselView.setImageListener(imageListener)
     }
 
-    var imageListener: ImageListener = ImageListener {
-            position, imageView ->
+    var imageListener: ImageListener = ImageListener { position, imageView ->
         imageView.setImageResource(sampleImages[position])
     }
 }

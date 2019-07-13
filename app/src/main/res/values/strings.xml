@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Preparedness Buddy</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_alert">Alert</string>
+    <string name="title_profile">Profile</string>
 
     <!--Main Activity-->
     <string name="recommended_title">Recommended for you</string>
