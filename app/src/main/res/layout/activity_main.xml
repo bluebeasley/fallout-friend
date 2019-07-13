@@ -9,8 +9,16 @@
         tools:context=".MainActivity">
 
     <include
+            android:id="@+id/progress_view"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            layout="@layout/progress_view"/>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/course_view"
+            app:layout_constraintTop_toBottomOf="@id/progress_view"
             layout="@layout/course_scroll_view"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
