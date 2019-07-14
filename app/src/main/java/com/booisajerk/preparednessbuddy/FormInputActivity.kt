@@ -13,6 +13,10 @@ class FormInputActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form_input)
 
+        var intent = intent
+        textBirthday.text = intent.getStringExtra("DateExtra")
+
+
         textBirthday.setOnClickListener { view ->
             val activityIntent = Intent(this, DatePicker::class.java)
             startActivity(activityIntent)
@@ -26,8 +30,6 @@ class FormInputActivity : AppCompatActivity() {
         relationshipSelection.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         spinnerRelationship.adapter = relationshipSelection
-        Log.d("Nicole", "$relationshipSelection")
-
 
         val medicalSelection = ArrayAdapter<MedicalConditions>(
             this,
