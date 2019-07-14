@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Fallout Friend</string>
+
+    <!--Bottom Navigation-->
     <string name="title_home">Home</string>
     <string name="title_chat">Chat</string>
     <string name="title_alert">Alert</string>
@@ -11,4 +13,26 @@
     <string name="progress_title_in_progress">Keep Going</string>
     <string name="progress_subtitle_in_progress">You\'ve completed %1$s / %2$s</string>
     <string name="title_activity_date_picker">DatePicker</string>
+
+    <!--Account Setup Activity-->
+    <string name="account_setup_title">Account Setup</string>
+    <string name="account_setup_description">Fill out your form so that we can personalize your preparedness plan
+    </string>
+
+    <string name="account_setup_personal_info">Personal Info</string>
+    <string name="account_setup_preferences">Preferences</string>
+    <string name="account_setup_household">Household</string>
+
+    <!--General-->
+    <string name="next_step_button">Begin next step</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
 </resources>

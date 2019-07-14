@@ -11,6 +11,9 @@
             android:theme="@style/AppTheme">
         <activity android:name=".HouseholdList">
         </activity>
+        <activity android:name=".AccountSetupActivity"
+                  android:label="@string/account_setup_title">
+        </activity>
         <activity android:name=".FormInputActivity">
         </activity>
         <activity android:name=".DatePicker">
