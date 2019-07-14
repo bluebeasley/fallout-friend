@@ -9,10 +9,15 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".ui.login.LoginActivity"
+                android:label="@string/title_activity_login">
+        </activity>
         <activity android:name=".HouseholdList">
         </activity>
-        <activity android:name=".AccountSetupActivity"
-                  android:label="@string/account_setup_title">
+        <activity
+                android:name=".AccountSetupActivity"
+                android:label="@string/account_setup_title">
         </activity>
         <activity android:name=".FormInputActivity">
         </activity>

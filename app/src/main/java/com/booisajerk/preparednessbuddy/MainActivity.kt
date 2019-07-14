@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.booisajerk.preparednessbuddy.ui.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.synnapps.carouselview.ImageListener
 import kotlinx.android.synthetic.main.carousel_view.*
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.navigation_profile -> {
-                //TODO do something
+                startActivity(Intent(this, LoginActivity::class.java))
                 return@OnNavigationItemSelectedListener true
             }
         }
