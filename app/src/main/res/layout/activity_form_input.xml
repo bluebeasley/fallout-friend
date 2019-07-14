@@ -5,38 +5,137 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FormInputActivity">
+        tools:context=".FamilyMemberInputActivity">
+
+    <!--Name-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_title"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/textName"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Name"/>
 
     <EditText
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/textName" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:contentDescription="textName" android:hint="Name"/>
+            android:id="@+id/textName"
+            android:textSize="@dimen/text_size_med"
+            app:layout_constraintTop_toBottomOf="@id/name_title"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="@dimen/element_margin_large"
+            android:contentDescription="textName"
+            android:hint="Enter your name"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/textName"/>
+
+
+    <!--Birthday-->
     <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/textBirthday" app:layout_constraintTop_toBottomOf="@+id/textName"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" android:hint="Birthday"/>
+            android:id="@+id/birthday_title"
+            app:layout_constraintTop_toBottomOf="@+id/textName"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Birthday"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBirthday"
+            app:layout_constraintTop_toBottomOf="@+id/birthday_title"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_size_med"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:hint="Click here to add birthday"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/textBirthday"/>
+
+
+    <!--Relationship-->
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relationship_title"
+            app:layout_constraintTop_toBottomOf="@+id/textBirthday"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Relationship"/>
+
     <Spinner
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerRelationship"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/textBirthday"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/element_margin_large"
+            android:textSize="@dimen/text_size_med"
+            app:layout_constraintTop_toBottomOf="@+id/relationship_title"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/spinnerRelationship"/>
+
+    <!--Medical-->
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medical_title"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRelationship"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Medical Conditions"/>
 
     <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMedical"
+            android:layout_marginTop="@dimen/element_margin_large"
+            app:layout_constraintTop_toBottomOf="@+id/medical_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:textSize="@dimen/text_size_med"
+            android:layout_marginEnd="8dp"/>
+
+    <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/spinnerMedical"
-            app:layout_constraintTop_toBottomOf="@+id/spinnerRelationship"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/spinnerMedical"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

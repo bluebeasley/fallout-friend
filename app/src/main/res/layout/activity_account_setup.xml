@@ -11,10 +11,10 @@
             android:id="@+id/path_icon"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginStart="@dimen/element_margin_large"
-            android:layout_marginEnd="@dimen/element_margin_large"
+            android:layout_marginStart="@dimen/element_margin_extra_large"
+            android:layout_marginEnd="@dimen/element_margin_extra_large"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/family"/>
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -32,15 +32,52 @@
               android:text="@string/account_setup_description"
               android:id="@+id/account_setup_description"/>
 
-    <TextView
-            android:layout_width="wrap_content"
+    <CheckedTextView
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="96dp"
             android:layout_height="wrap_content"
-            android:id="@+id/household_task"
-            android:text="@string/account_setup_household"
+            android:id="@+id/personal_info_task"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/element_margin_large"
+            android:text="@string/account_setup_personal_info"
+            android:checkMark="@drawable/ic_check_black_24dp"
+            android:textSize="@dimen/text_size_lg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/account_setup_description"
-    />
+            app:layout_constraintTop_toBottomOf="@id/account_setup_description"/>
+
+    <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/preferences_task"
+            android:checked="false"
+            android:gravity="center"
+            android:checkMark="@drawable/ic_check_black_24dp"
+            android:layout_marginTop="@dimen/element_margin_large"
+            android:text="@string/account_setup_preferences"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_info_task"/>
+
+    <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/household_task"
+            android:layout_marginTop="@dimen/element_margin_large"
+            android:text="@string/account_setup_household"
+            android:gravity="center"
+            android:checked="false"
+            android:textSize="@dimen/text_size_lg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/preferences_task"/>
 
     <Button
             android:id="@+id/begin_next_step"

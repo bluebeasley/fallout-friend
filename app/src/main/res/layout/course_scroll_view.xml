@@ -35,7 +35,7 @@
                     android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:background="@drawable/earthquake"/>
 
             <ImageButton
                     android:id="@+id/scroll_button_two"
@@ -44,7 +44,7 @@
                     android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toEndOf="@id/scroll_button_one"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:background="@drawable/family"/>
 
 
             <ImageButton
@@ -54,7 +54,7 @@
                     android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toEndOf="@id/scroll_button_two"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:background="@drawable/family"/>
 
 
             <ImageButton

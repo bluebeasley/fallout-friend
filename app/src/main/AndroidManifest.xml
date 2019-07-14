@@ -24,7 +24,7 @@
                 android:label="@string/account_setup_title"
                 android:parentActivityName="com.booisajerk.preparednessbuddy.MainActivity">
         </activity>
-        <activity android:name=".FormInputActivity"
+        <activity android:name=".FamilyMemberInputActivity"
                   android:label="Add a family member"
                   android:parentActivityName="com.booisajerk.preparednessbuddy.HouseholdList">
         </activity>

@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     //TODO add real images here
     private var sampleImages =
-        intArrayOf(R.drawable.ic_chat_bubble_black_24dp, R.drawable.ic_mood_black_24dp)
+        intArrayOf(R.drawable.shop)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

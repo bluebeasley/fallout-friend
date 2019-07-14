@@ -27,9 +27,10 @@
             android:id="@+id/progress_button"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginStart="@dimen/element_margin_large"
-            android:layout_marginEnd="@dimen/element_margin_large"
+            android:layout_marginStart="@dimen/element_margin_extra_large"
+            android:layout_marginEnd="@dimen/element_margin_extra_large"
+            android:scaleType="center"
             app:layout_constraintTop_toBottomOf="@id/recommended_sub_title"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/family"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

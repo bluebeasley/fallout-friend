@@ -11,7 +11,7 @@
     <string name="recommended_title">Recommended for you</string>
     <string name="progress_title_start">Get Started</string>
     <string name="progress_title_in_progress">Keep Going</string>
-    <string name="progress_subtitle_in_progress">You\'ve completed %1$s / %2$s</string>
+    <string name="progress_subtitle_in_progress">You\'ve completed 2/3</string>
     <string name="title_activity_date_picker">DatePicker</string>
 
     <!--Account Setup Activity-->
@@ -34,5 +34,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="add_family_members_title">Add your family members.</string>
+    <string name="i_have_none_button_text">I have none</string>
+    <string name="add_text">Add</string>
 
 </resources>

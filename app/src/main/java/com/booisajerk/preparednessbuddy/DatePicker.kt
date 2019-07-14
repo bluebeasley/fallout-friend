@@ -44,7 +44,7 @@ class DatePicker : AppCompatActivity() {
             //TODO: close date picker and show date in FormInput
 
 
-            val intent = Intent(this, FormInputActivity::class.java)
+            val intent = Intent(this, FamilyMemberInputActivity::class.java)
             intent.putExtra("DateExtra", "$selectedDate")
             startActivity(intent)
 
