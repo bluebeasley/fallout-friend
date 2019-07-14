@@ -2,7 +2,6 @@ package com.booisajerk.preparednessbuddy
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_form_input.*
