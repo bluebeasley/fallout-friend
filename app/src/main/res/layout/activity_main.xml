@@ -33,9 +33,17 @@
 
             <include
                     android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fyi_view"
+                    android:layout_margin="@dimen/element_margin_large"
+                    app:layout_constraintTop_toBottomOf="@id/course_view"
+                    layout="@layout/fyi_view"/>
+
+            <include
+                    android:layout_width="fill_parent"
                     android:layout_height="250dp"
                     android:id="@+id/carousel_view"
-                    app:layout_constraintTop_toBottomOf="@id/course_view"
+                    app:layout_constraintTop_toBottomOf="@id/fyi_view"
                     layout="@layout/carousel_view"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

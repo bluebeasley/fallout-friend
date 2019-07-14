@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="250dp"
+        android:background="@drawable/outline"
+        android:layout_margin="@dimen/element_margin_large"
+        android:layout_height="100dp">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:textSize="50sp"
+              android:paddingStart="@dimen/element_margin_large"
+              android:text="51%"
+              android:id="@+id/fyi_number"/>
+
+    <TextView android:layout_width="200sp"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="@id/fyi_number"
+              app:layout_constraintBottom_toBottomOf="@id/fyi_number"
+              app:layout_constraintStart_toEndOf="@id/fyi_number"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:textSize="18sp"
+              android:text="of people are intimidated by disaster prep"
+              android:id="@+id/fyi_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,23 +24,24 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/button_holder"
+                android:layout_marginStart="@dimen/element_margin_large"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
             <ImageButton
                     android:id="@+id/scroll_button_one"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="6dp"
+                    android:layout_width="@dimen/course_image_size"
+                    android:layout_height="@dimen/course_image_size"
+                    android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:src="@drawable/ic_launcher_background"/>
 
             <ImageButton
                     android:id="@+id/scroll_button_two"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="6dp"
+                    android:layout_width="@dimen/course_image_size"
+                    android:layout_height="@dimen/course_image_size"
+                    android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toEndOf="@id/scroll_button_one"
                     app:layout_constraintTop_toTopOf="parent"
                     android:src="@drawable/ic_launcher_background"/>
@@ -48,20 +49,29 @@
 
             <ImageButton
                     android:id="@+id/scroll_button_three"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="6dp"
+                    android:layout_width="@dimen/course_image_size"
+                    android:layout_height="@dimen/course_image_size"
+                    android:layout_margin="@dimen/element_margin_small"
                     app:layout_constraintStart_toEndOf="@id/scroll_button_two"
                     app:layout_constraintTop_toTopOf="parent"
                     android:src="@drawable/ic_launcher_background"/>
 
 
             <ImageButton
-                    android:id="@+id/scroll_button_four"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="6dp"
-                    app:layout_constraintStart_toEndOf="@id/scroll_button_three"
+                android:id="@+id/scroll_button_four"
+                android:layout_width="@dimen/course_image_size"
+                android:layout_height="@dimen/course_image_size"
+                android:layout_margin="@dimen/element_margin_small"
+                app:layout_constraintStart_toEndOf="@id/scroll_button_three"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ImageButton
+                    android:id="@+id/scroll_button_five"
+                    android:layout_width="@dimen/course_image_size"
+                    android:layout_height="@dimen/course_image_size"
+                    android:layout_margin="@dimen/element_margin_small"
+                    app:layout_constraintStart_toEndOf="@id/scroll_button_four"
                     app:layout_constraintTop_toTopOf="parent"
                     android:src="@drawable/ic_launcher_background"/>
 
