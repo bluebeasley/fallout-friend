@@ -10,7 +10,6 @@ class AccountSetupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_account_setup)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         household_task.setOnClickListener {
             startActivity(Intent(this, HouseholdList::class.java))

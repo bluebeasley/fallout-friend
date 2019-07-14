@@ -2,7 +2,6 @@ package com.booisajerk.preparednessbuddy
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.booisajerk.preparednessbuddy.ui.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -14,7 +13,6 @@ import kotlinx.android.synthetic.main.progress_view.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
@@ -39,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //TODO add real images here
-    var sampleImages =
+    private var sampleImages =
         intArrayOf(R.drawable.ic_chat_bubble_black_24dp, R.drawable.ic_mood_black_24dp)
 
     override fun onCreate(savedInstanceState: Bundle?) {

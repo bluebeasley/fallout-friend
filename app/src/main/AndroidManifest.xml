@@ -13,13 +13,17 @@
                 android:name=".ui.login.LoginActivity"
                 android:label="@string/title_activity_login">
         </activity>
-        <activity android:name=".HouseholdList">
+        <activity android:name=".HouseholdList"
+                  android:parentActivityName="com.booisajerk.preparednessbuddy.AccountSetupActivity"
+        >
         </activity>
         <activity
                 android:name=".AccountSetupActivity"
+                android:parentActivityName="com.booisajerk.preparednessbuddy.MainActivity"
                 android:label="@string/account_setup_title">
         </activity>
-        <activity android:name=".FormInputActivity">
+        <activity android:name=".FormInputActivity"
+                  android:parentActivityName="com.booisajerk.preparednessbuddy.HouseholdList">
         </activity>
         <activity android:name=".DatePicker">
         </activity>
