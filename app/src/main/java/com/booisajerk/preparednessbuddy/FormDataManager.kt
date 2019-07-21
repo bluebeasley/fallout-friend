@@ -10,10 +10,7 @@ object FormDataManager {
     }
 
     private fun initializeRelationships() {
-        var relationship = RelationshipLevel("Family member")
-        relationships.set(relationship.relationshipType, relationship)
-
-        relationship = RelationshipLevel("Cat")
+        var relationship = RelationshipLevel("Cat")
         relationships.set(relationship.relationshipType, relationship)
 
         relationship = RelationshipLevel("Child")
@@ -30,10 +27,7 @@ object FormDataManager {
     }
 
     private fun initializeMedicals() {
-        var medical = MedicalConditions("Medical condition")
-        medicals.set(medical.medicalType, medical)
-
-        medical = MedicalConditions("Cerebral Palsy")
+        var medical = MedicalConditions("Cerebral Palsy")
         medicals.set(medical.medicalType, medical)
 
         medical = MedicalConditions("Diabetic")
