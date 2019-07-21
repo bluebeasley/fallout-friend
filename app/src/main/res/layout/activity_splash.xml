@@ -5,17 +5,15 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:background="#FFFFFF">
 
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/splash"
+            android:src="@drawable/ic_logomarkwithnameandtagline"
             android:layout_gravity="center"
             android:scaleType="centerInside"
             android:id="@+id/spash_screen"
             android:contentDescription="spashscreen"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!--TODO  android:src="@drawable/logomarkwithnameandtagline.svg" doesn't work-->
