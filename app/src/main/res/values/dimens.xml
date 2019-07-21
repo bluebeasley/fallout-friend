@@ -5,11 +5,17 @@
 
     <dimen name="element_margin_extra_large">38dp</dimen>
     <dimen name="element_margin_large">24dp</dimen>
+    <dimen name="element_margin_medium">12dp</dimen>
     <dimen name="element_margin_small">8dp</dimen>
+    <dimen name="element_margin_extra_small">4dp</dimen>
 
     <dimen name="text_size_xl">34sp</dimen>
     <dimen name="text_size_lg">26sp</dimen>
     <dimen name="text_size_med">20sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
 
-    <dimen name="course_image_size">100dp</dimen>
+    <dimen name="recyclerview_image_size">150dp</dimen>
+
+    <dimen name="image_corner_radius">8dip</dimen>
+
 </resources>

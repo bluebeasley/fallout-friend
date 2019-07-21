@@ -8,7 +8,8 @@
     <string name="title_profile">Profile</string>
 
     <!--Main Activity-->
-    <string name="recommended_title">Recommended for you</string>
+    <string name="recommended_title">Recommendations</string>
+    <string name="recommended_subtitle">Curated plans based on your profile</string>
     <string name="progress_title_start">Get Started</string>
     <string name="progress_title_in_progress">Keep Going</string>
     <string name="progress_subtitle_in_progress">You\'ve completed 2/3</string>
@@ -37,5 +38,6 @@
     <string name="add_family_members_title">Add your family members.</string>
     <string name="i_have_none_button_text">I have none</string>
     <string name="add_text">Add</string>
+    <string name="see_more_button">See more plans</string>
 
 </resources>
