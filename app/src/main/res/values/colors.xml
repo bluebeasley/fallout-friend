@@ -7,4 +7,6 @@
     <color name="pageBackground">#EEEEEE</color>
     <color name="buttonColor">#29B6F6</color>
     <color name="pressedButton">#039BE5</color>
+    <color name="splashBackground">#00A6FB</color>
+    <color name="darkBlue">#004669</color>
 </resources>

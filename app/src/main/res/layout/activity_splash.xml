@@ -10,10 +10,10 @@
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_logomarkwithnameandtagline"
+            android:src="@drawable/ic_splash"
             android:layout_gravity="center"
             android:scaleType="centerInside"
-            android:id="@+id/spash_screen"
-            android:contentDescription="spashscreen"/>
+            android:id="@+id/splash_screen"
+            android:contentDescription="splashscreen" android:background="@color/splashBackground"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
