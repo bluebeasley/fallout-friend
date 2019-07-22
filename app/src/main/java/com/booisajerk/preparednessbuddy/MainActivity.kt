@@ -2,13 +2,11 @@ package com.booisajerk.preparednessbuddy
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.booisajerk.preparednessbuddy.ui.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.synnapps.carouselview.ImageListener
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.carousel_view.*
 import kotlinx.android.synthetic.main.current_progress_view.*
 import kotlinx.android.synthetic.main.recommended_courses_view.*
@@ -18,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private var courses: ArrayList<Course>? = null
 
-    private lateinit var adapter: RecyclerAdapter
+    private lateinit var adapter: CoursesRecyclerAdapter
 
     //TODO add real images here
     private var sampleImages =
@@ -34,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val gridLayoutManager = GridLayoutManager(this, 2)
         recyclerview.setLayoutManager(gridLayoutManager)
 
-        adapter = courses?.let { RecyclerAdapter(it) }!!
+        adapter = courses?.let { CoursesRecyclerAdapter(it) }!!
         recyclerview.adapter = adapter
 
         // Bottom Navigation
@@ -42,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
         progress_button.setOnClickListener {
-            startActivity(Intent(this, AccountSetupActivity::class.java))
+            startActivity(Intent(this, CourseDetailsActivity::class.java))
         }
 
         // Carousel View
@@ -66,11 +64,13 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_alert -> {
-                //TODO do something
+                //TODO this is just a placeholder so we can get to the Household list activity
+                startActivity(Intent(this, HouseholdList::class.java))
                 return@OnNavigationItemSelectedListener true
             }
 
             R.id.navigation_profile -> {
+                //TODO this is just a placeholder so we can get to the login activity
                 startActivity(Intent(this, LoginActivity::class.java))
                 return@OnNavigationItemSelectedListener true
             }

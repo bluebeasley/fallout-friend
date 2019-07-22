@@ -30,6 +30,6 @@
             android:layout_marginEnd="@dimen/element_margin_extra_large"
             android:scaleType="center"
             app:layout_constraintTop_toBottomOf="@id/recommended_sub_title"
-            android:src="@drawable/family"/>
+            android:src="@drawable/earthquake"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

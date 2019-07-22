@@ -25,7 +25,7 @@
     <string name="account_setup_household">Household</string>
 
     <!--General-->
-    <string name="next_step_button">Begin next step</string>
+    <string name="next_step_button">Next: %1s</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -40,4 +40,16 @@
     <string name="add_text">Add</string>
     <string name="see_more_button">See more plans</string>
 
+    <string name="course_details_title">Course Details</string>
+
+    <!--Earthquake course-->
+    <string name="earthquake_title">Earthquakes</string>
+    <string name="earthquake_course_description">An earthquake is the sudden rapid shaking of the earth. Earthquakes can cause buildings to collapse and cause heavy items to fall, resulting in injuries.</string>
+    <string name="earthquake_text_1">Practice Drop, Cover, Hold on</string>
+    <string name="earthquake_text_2">Secure items to wall</string>
+    <string name="earthquake_text_3">Store heavy objects</string>
+    <string name="earthquake_text_4">Make a supply kit</string>
+    <string name="earthquake_text_5">Create an emergency communications plan</string>
+    <string name="earthquake_text_6">Bonus: Earthquake insurance</string>
+    <string name="earthquake_text_7">Bonus: Fix structural issues</string>
 </resources>

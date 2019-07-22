@@ -26,11 +26,11 @@
         <activity
                 android:name=".HouseholdList"
                 android:label="Family members"
-                android:parentActivityName=".AccountSetupActivity">
+                android:parentActivityName=".CourseDetailsActivity">
         </activity>
         <activity
-                android:name=".AccountSetupActivity"
-                android:label="@string/account_setup_title"
+                android:name=".CourseDetailsActivity"
+                android:label="@string/course_details_title"
                 android:parentActivityName=".MainActivity">
         </activity>
         <activity

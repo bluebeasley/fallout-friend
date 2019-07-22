@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.recommended_course_item.view.*
 
-class RecyclerAdapter(private val courses: ArrayList<Course>) :
-    RecyclerView.Adapter<RecyclerAdapter.CourseHolder>() {
+class CoursesRecyclerAdapter(private val courses: ArrayList<Course>) :
+    RecyclerView.Adapter<CoursesRecyclerAdapter.CourseHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.CourseHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoursesRecyclerAdapter.CourseHolder {
         val inflatedView = parent.inflate(R.layout.recommended_course_item, false)
         return CourseHolder(inflatedView)
     }
@@ -18,7 +18,7 @@ class RecyclerAdapter(private val courses: ArrayList<Course>) :
         return courses.size
     }
 
-    override fun onBindViewHolder(holder: RecyclerAdapter.CourseHolder, position: Int) {
+    override fun onBindViewHolder(holder: CoursesRecyclerAdapter.CourseHolder, position: Int) {
         val itemCourse = courses[position]
         holder.bindCourseInfo(itemCourse)
     }
