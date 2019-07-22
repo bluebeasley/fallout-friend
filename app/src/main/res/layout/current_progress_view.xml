@@ -18,7 +18,6 @@
               android:layout_height="wrap_content"
               app:layout_constraintTop_toBottomOf="@id/recommended_title"
               android:textSize="@dimen/text_size_med"
-              android:textAllCaps="true"
               android:layout_marginStart="@dimen/element_margin_large"
               android:text="@string/progress_subtitle_in_progress"
               android:id="@+id/recommended_sub_title"/>
