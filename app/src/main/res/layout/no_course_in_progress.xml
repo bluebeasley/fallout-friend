@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              android:textSize="@dimen/text_size_lg"
+              android:layout_marginStart="@dimen/element_margin_large"
+              android:text="@string/progress_no_course_in_progress"
+              android:textAllCaps="true"
+              android:id="@+id/recommended_title"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/recommended_title"
+              android:textSize="@dimen/text_size_med"
+              android:layout_marginStart="@dimen/element_margin_large"
+              android:text="@string/progress_subtitle_no_course_in_progress"
+              android:id="@+id/recommended_sub_title"/>
+
+    <ImageButton
+            android:id="@+id/progress_button"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/element_margin_extra_large"
+            android:layout_marginEnd="@dimen/element_margin_extra_large"
+            android:scaleType="center"
+            app:layout_constraintTop_toBottomOf="@id/recommended_sub_title"
+            android:src="@drawable/earthquake"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
