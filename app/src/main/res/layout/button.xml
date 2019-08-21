@@ -15,15 +15,15 @@
             <corners android:radius="1dip"/>
             <stroke android:width="1dip"
                     android:color="@color/pressedButton"/>
-            <solid android:color="@color/buttonColor"/>
+            <solid android:color="@color/falloutFriendBlue"/>
         </shape>
     </item>
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="8dip"/>
             <stroke android:width="1dip"
-                    android:color="@color/buttonColor"/>
-            <solid android:color="@color/buttonColor"/>
+                    android:color="@color/falloutFriendBlue"/>
+            <solid android:color="@color/falloutFriendBlue"/>
         </shape>
     </item>
 </selector>
