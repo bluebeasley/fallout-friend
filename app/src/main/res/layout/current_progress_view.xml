@@ -44,7 +44,6 @@
             android:text="@string/course_name"
             android:textAppearance="@style/CourseName"
             android:textStyle="bold"
-            android:clickable="true"
             app:layout_constraintEnd_toEndOf="@+id/progress_button"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/course_level"
