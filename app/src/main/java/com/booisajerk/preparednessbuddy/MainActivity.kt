@@ -2,11 +2,13 @@ package com.booisajerk.preparednessbuddy
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ScrollView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.booisajerk.preparednessbuddy.ui.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.synnapps.carouselview.ImageListener
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.carousel_view.*
 import kotlinx.android.synthetic.main.current_progress_view.*
 import kotlinx.android.synthetic.main.recommended_courses_view.*
@@ -25,6 +27,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Handle scrolling for older devices
+        main_scrollview.fullScroll(ScrollView.FOCUS_UP)
 
         initializeCourseData()
 
