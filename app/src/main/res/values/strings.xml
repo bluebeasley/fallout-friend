@@ -13,6 +13,8 @@
     <string name="progress_title_start">Get Started</string>
     <string name="progress_title_in_progress">Keep Going</string>
     <string name="progress_subtitle_in_progress">You\'ve completed 2 out of 3 steps</string>
+    <string name="course_level">BEGINNER</string>
+    <string name="course_name">Earthquakes</string>
     <string name="progress_no_course_in_progress">Pick a new plan</string>
     <string name="progress_subtitle_no_course_in_progress">Plans recommended just for you</string>
     <string name="title_activity_date_picker">DatePicker</string>

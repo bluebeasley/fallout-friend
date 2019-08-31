@@ -8,4 +8,6 @@
     <color name="pressedButton">#039BE5</color>
     <color name="falloutFriendBlue">#00A6FB</color>
     <color name="darkBlue">#004669</color>
+
+    <color name="white">#FFFFFF</color>
 </resources>
